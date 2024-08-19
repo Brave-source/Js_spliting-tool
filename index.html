@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Splitter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSV Splitter</h1>
+      <input
+        placeholder="Upload CSV"
+        type="file"
+        id="csvFileInput"
+        accept=".csv"
+      />
+      <div id="status">Status: Waiting for file upload...</div>
+      <div id="progress-container">
+        <progress id="progress-bar" value="0" max="100"></progress>
+      </div>
+      <div id="downloadLinks"></div>
+    </div>
+    <script type="module" src="fileUpload.js"></script>
+    <!-- <script type="module" src="splitter.js"></script> -->
+  </body>
+</html>
